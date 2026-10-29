@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AU MULTI SERVICES | Colmar</title>
+
+    <!-- Feuille de style CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- BIBLIOTHÈQUE D'ICÔNES FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- EN-TÊTE : Partie supérieure du site -->
+    <header>
+      <div class="brand">
+        <!--  NOM DE L'ENTREPRISE  -->
+        <h1>
+          <span class="brand-dark">AU MULTI </span>
+          <span class="brand-blue">SERVICES</span>
+        </h1>
+        <!-- SLOGAN DE L'ENTREPRISE -->
+
+        <p class="tagline">Votre quotidien, notre priorité</p>
+      </div>
+      <!--  MENU DE NAVIGATION  -->
+      <nav>
+        <ul>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#services">Nos services</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SECTION D'ACCUEIL : Présentation principale -->
+    <section id="home" class="hero">
+      <!-- TITRE PRINCIPAL -->
+      <h2>Des services à domicile de qualité à Colmar</h2>
+
+      <!-- Courte description -->
+      <p>
+        Nous vous accompagnons au quotidien avec nos services de ménage à
+        domicile, de nettoyage des vitres et de garde d'enfants.
+      </p>
+
+      <!--BOUTON WHATSAPP -->
+      <a
+        class="hero-whatsapp"
+        href="https://wa.me/33605838043"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+        Contacter-nous sur WhatsApp
+      </a>
+
+      <!-- BOUTON TÉLÉPHONE -->
+      <a class="hero-phone" href="tel:+33605838043">
+        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+        Appelez-nous
+      </a>
+    </section>
+
+    <!-- SECTION SERVICES : Les servieces proposés -->
+
+    <section id="services" class="services">
+      <!-- Titre de la section -->
+      <h2>Nos services</h2>
+
+      <!-- Service 1 : ménage à domicile-->
+      <div class="service-card">
+        <img src="images/ménage-a-domicile.jpg" />
+        <!-- Titre du service -->
+        <h3>Ménage à domicile</h3>
+
+        <!-- Description du service -->
+        <p>Un intérieur propre et agréable au quotidien.</p>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card">
+        <!-- Image du service -->
+        <img
+          src="images/netoyage-des-vitre.jpg"
+          alt="Nettoyage de vitres à domicile"
+        />
+        <!-- Titre du service -->
+        <h3>Nettoyage des vitres</h3>
+
+        <!-- Description du service -->
+        <p>Des vitres propres pour plus de luminosité.</p>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card">
+        <!-- Image du service -->
+        <img
+          src="images/garde-d'enfants.jpg"
+          alt="Garde d'enfants à domicile"
+        />
+        <!-- Titre du service -->
+        <h3>Garde d'enfants</h3>
+
+        <!-- Description du service -->
+        <p>Un accompagnement adapté aux besoins des familles.</p>
+      </div>
+    </section>
+
+    <!--  SECTION À PROPOS : Présentation de l'entreprise -->
+    <section id="about" class="about">
+      <!-- contenu de présentation -->
+      <div class="about-content">
+        <!-- Titre de la section -->
+        <h2>À propos de nous</h2>
+
+        <!-- Texte de présentation -->
+        <p>
+          AU MULTI SERVICES vous accompagne au quotidien avec des services à
+          domicile adaptés à vos besoins. Notre objectif est de vous faciliter
+          la vie.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION CONTACT : Coordonnées et formulaire -->
+    <section id="contact" class="contact">
+      <!-- Titre de la section -->
+      <h2>Contactez-nous</h2>
+
+      <!-- Texte de présentation -->
+      <p>
+        Vous avez une question ou besoin de nos services ? Écrivez-nous pour en
+        savoir plus.
+      </p>
+
+      <!-- Coordonnée de l'entreprise -->
+      <div class="contact-info">
+        <!-- Zone d'intervention -->
+        <div class="contact-card">
+          <h3>Notre zone d'intervention</h3>
+          <p>Colmar et environs</p>
+        </div>
+
+        <!-- Contact par téléphone -->
+        <div class="contact-card">
+          <h3>Téléphone</h3>
+          <p>
+            <a href="tel:+33605838043">06 05 83 80 43</a>
+          </p>
+        </div>
+
+        <!-- Contact par WhatsApp -->
+        <div class="contact-card">
+          <h3>WhatsApp</h3>
+          <p>
+            <a
+              href="https://wa.me/33605838043"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Nous contacter sur WhatsApp</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- FORMULAIRE DE CONTACT -->
+      <form>
+        <!-- Champ pour le nom -->
+        <label for="nom">Votre nom</label>
+        <input
+          type="text"
+          id="nom"
+          name="nom"
+          placeholder="Entrez votre nom"
+          required
+        />
+
+        <!-- Champ pour l'adresse e-mail -->
+        <label for="email">Votre adresse e-mail</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Entrez votre adresse e-mail"
+          required
+        />
+
+        <!-- Champ pour le message -->
+        <label for="message">Votre message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Écrivez votre message"
+          required
+        ></textarea>
+
+        <!-- Bouton d'envoi -->
+        <button type="submit">Envoyer le message</button>
+      </form>
+
+      <!-- Image de la ville de Colmar -->
+      <div class="contact-image">
+        <img src="images/colmar-image.jpg" alt="Vue de la ville de Colmar" />
+      </div>
+    </section>
+
+    <!-- PIED DE PAGE : Informations de bas de page -->
+    <footer class="footer">
+      <!-- Nom de l'entreprise -->
+      <h2>AU MULTI SERVICES</h2>
+
+      <!-- Menu de navigation du pied de page -->
+      <nav>
+        <ul>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#services">Nos services</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Droits d'auteur -->
+      <p>&copy; 2026 AU MULTI SERVICES. Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>

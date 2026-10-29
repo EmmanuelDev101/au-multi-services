@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* SECTION D'ACCUEIL : Image de fond */
+.hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(images/hero-image.jpg);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Hauteur et espace intérieur */
+  min-height: 450px;
+  padding: 60px 30px;
+}
+
+/* TITRE PRINCIPAL DE LA SECTION D'ACCUEIL */
+.hero h2 {
+  color: white;
+  font-size: 40px;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+/* TEXT DE PRÉSENTATION DE LA SECTION D'ACCUEIL */
+.hero p {
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 550px;
+  margin-bottom: 30px;
+}
+
+/* STYLE COMMUN DES BOUTONS DE L'ACCUEIL */
+.hero a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 30px;
+}
+
+/* BOUTON WHATSAPP */
+.hero a.hero-whatsapp {
+  background-color: #0875d1;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+/* BOUTON TÉLÉPHONE */
+.hero a.hero-phone {
+  background-color: #ffffff;
+  color: #12345a;
+  border: 1px solid #12345a;
+}
+
+/* ESPACEMENT DES ICÔNES */
+.hero a i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+/* EN-TETE DU SITE */
+header {
+  background-color: #ffffff;
+  padding: 15px 40px;
+
+  /* Aligner la marque et la menu */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* NOM DE L'ENTERPRISE */
+header h1 {
+  color: #12345a;
+  font-size: 28px;
+  margin: 0;
+}
+.brand-blue {
+  color: #0875d1;
+}
+
+/* SLOGAN DE L'ENTREPRISE */
+.tagline {
+  color: #12345a;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* LIST DU MENU DE NAVIGATION */
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* LIENS DU MENU DE NAVIGATION */
+header nav a {
+  color: #12345a;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* SECTION DES SERVICES */
+.services {
+  padding: 50px 40px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+/* TITRE DE LA SECTION */
+.services h2 {
+  color: #12345a;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+/* CARTE D'UN SERVICE */
+.service-card {
+  display: inline-block;
+  width: 28%;
+  margin: 1%;
+  vertical-align: top;
+  text-align: left;
+}
+
+/* IMAGE DU SERVICE */
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* NOM DU SERVICE */
+.service-card h3 {
+  color: #12345a;
+  font-size: 20px;
+  margin: 15px 0 10px;
+}
+
+/* DESCRIPTION DU SERVICE */
+.service-card p {
+  color: #555555;
+  font-size: 15px;
+  line-height: 1.6;
+}
