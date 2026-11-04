@@ -1,11 +1,13 @@
+
 <!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>AU MULTI SERVICES | Colmar</title>
 
-    <!-- Feuille de style CSS -->
+    <!-- FEUILLE DE STYLE CSS -->
     <link rel="stylesheet" href="style.css" />
 
     <!-- BIBLIOTHÈQUE D'ICÔNES FONT AWESOME -->
@@ -14,21 +16,36 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
   </head>
+
   <body>
-    <!-- EN-TÊTE : Partie supérieure du site -->
+    <!-- ========================================
+         EN-TÊTE : LOGO ET NAVIGATION
+    ========================================= -->
+
     <header>
+      <!-- NOM ET SLOGAN DE L'ENTREPRISE -->
       <div class="brand">
-        <!--  NOM DE L'ENTREPRISE  -->
         <h1>
           <span class="brand-dark">AU MULTI </span>
           <span class="brand-blue">SERVICES</span>
         </h1>
-        <!-- SLOGAN DE L'ENTREPRISE -->
 
         <p class="tagline">Votre quotidien, notre priorité</p>
       </div>
-      <!--  MENU DE NAVIGATION  -->
-      <nav>
+
+      <!-- BOUTON DU MENU MOBILE -->
+      <button
+        type="button"
+        class="menu-toggle"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        ☰
+      </button>
+
+      <!-- MENU DE NAVIGATION -->
+      <nav id="main-navigation" aria-label="Navigation principale">
         <ul>
           <li><a href="#home">Accueil</a></li>
           <li><a href="#services">Nos services</a></li>
@@ -38,18 +55,19 @@
       </nav>
     </header>
 
-    <!-- SECTION D'ACCUEIL : Présentation principale -->
+    <!-- ========================================
+         SECTION 1 : ACCUEIL
+    ========================================= -->
+
     <section id="home" class="hero">
-      <!-- TITRE PRINCIPAL -->
       <h2>Des services à domicile de qualité à Colmar</h2>
 
-      <!-- Courte description -->
       <p>
         Nous vous accompagnons au quotidien avec nos services de ménage à
         domicile, de nettoyage des vitres et de garde d'enfants.
       </p>
 
-      <!--BOUTON WHATSAPP -->
+      <!-- BOUTON WHATSAPP -->
       <a
         class="hero-whatsapp"
         href="https://wa.me/33605838043"
@@ -57,7 +75,7 @@
         rel="noopener noreferrer"
       >
         <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-        Contacter-nous sur WhatsApp
+        Contactez-nous sur WhatsApp
       </a>
 
       <!-- BOUTON TÉLÉPHONE -->
@@ -67,87 +85,123 @@
       </a>
     </section>
 
-    <!-- SECTION SERVICES : Les servieces proposés -->
+    <!-- ========================================
+         SECTION 2 : NOS SERVICES
+    ========================================= -->
 
     <section id="services" class="services">
-      <!-- Titre de la section -->
       <h2>Nos services</h2>
 
-      <!-- Service 1 : ménage à domicile-->
+      <!-- SERVICE 1 : MÉNAGE À DOMICILE -->
       <div class="service-card">
-        <img src="images/ménage-a-domicile.jpg" />
-        <!-- Titre du service -->
+        <img
+          src="images/ménage-a-domicile.jpg"
+          alt="Service de ménage à domicile"
+        />
+
         <h3>Ménage à domicile</h3>
 
-        <!-- Description du service -->
         <p>Un intérieur propre et agréable au quotidien.</p>
       </div>
 
-      <!-- Service 2 -->
+      <!-- SERVICE 2 : NETTOYAGE DES VITRES -->
       <div class="service-card">
-        <!-- Image du service -->
         <img
           src="images/netoyage-des-vitre.jpg"
           alt="Nettoyage de vitres à domicile"
         />
-        <!-- Titre du service -->
+
         <h3>Nettoyage des vitres</h3>
 
-        <!-- Description du service -->
         <p>Des vitres propres pour plus de luminosité.</p>
       </div>
 
-      <!-- Service 3 -->
+      <!-- SERVICE 3 : GARDE D'ENFANTS -->
       <div class="service-card">
-        <!-- Image du service -->
         <img
           src="images/garde-d'enfants.jpg"
           alt="Garde d'enfants à domicile"
         />
-        <!-- Titre du service -->
+
         <h3>Garde d'enfants</h3>
 
-        <!-- Description du service -->
         <p>Un accompagnement adapté aux besoins des familles.</p>
       </div>
     </section>
 
-    <!--  SECTION À PROPOS : Présentation de l'entreprise -->
+    <!-- ========================================
+         SECTION 3 : À PROPOS
+    ========================================= -->
+
     <section id="about" class="about">
-      <!-- contenu de présentation -->
+      <!-- IMAGE DE PRÉSENTATION -->
+      <div class="about-image">
+        <img
+          src="images/hero-image.jpg"
+          alt="Intérieur propre et accueillant"
+        />
+      </div>
+
+      <!-- PRÉSENTATION DE L'ENTREPRISE -->
       <div class="about-content">
-        <!-- Titre de la section -->
         <h2>À propos de nous</h2>
 
-        <!-- Texte de présentation -->
+        <h3>AU MULTI SERVICES</h3>
+
         <p>
-          AU MULTI SERVICES vous accompagne au quotidien avec des services à
-          domicile adaptés à vos besoins. Notre objectif est de vous faciliter
-          la vie.
+          Nous sommes une entreprise locale basée à Colmar, spécialisée dans
+          les services à la personne. Notre mission est de vous apporter des
+          prestations de qualité, fiables et adaptées à vos besoins. Que ce
+          soit pour votre maison ou vos enfants, nous mettons tout en œuvre
+          pour vous simplifier le quotidien.
         </p>
+      </div>
+
+      <!-- NOS ENGAGEMENTS -->
+      <div class="about-benefits">
+        <div class="benefit">
+          <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+          <p>Sérieux<br />et confiance</p>
+        </div>
+
+        <div class="benefit">
+          <i class="fa-regular fa-star" aria-hidden="true"></i>
+          <p>Qualité<br />des prestations</p>
+        </div>
+
+        <div class="benefit">
+          <i class="fa-solid fa-users" aria-hidden="true"></i>
+          <p>Équipe<br />professionnelle</p>
+        </div>
+
+        <div class="benefit">
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          <p>Intervention<br />à Colmar</p>
+        </div>
       </div>
     </section>
 
-    <!-- SECTION CONTACT : Coordonnées et formulaire -->
+    <!-- ========================================
+         SECTION 4 : CONTACT
+    ========================================= -->
+
     <section id="contact" class="contact">
-      <!-- Titre de la section -->
       <h2>Contactez-nous</h2>
 
-      <!-- Texte de présentation -->
       <p>
-        Vous avez une question ou besoin de nos services ? Écrivez-nous pour en
-        savoir plus.
+        Vous avez une question ou besoin de nos services ? Écrivez-nous pour
+        en savoir plus.
       </p>
 
-      <!-- Coordonnée de l'entreprise -->
+      <!-- COORDONNÉES DE L'ENTREPRISE -->
       <div class="contact-info">
-        <!-- Zone d'intervention -->
+        <!-- ZONE D'INTERVENTION -->
         <div class="contact-card">
           <h3>Notre zone d'intervention</h3>
           <p>Colmar et environs</p>
         </div>
 
-        <!-- Contact par téléphone -->
+        <!-- CONTACT PAR TÉLÉPHONE -->
         <div class="contact-card">
           <h3>Téléphone</h3>
           <p>
@@ -155,7 +209,7 @@
           </p>
         </div>
 
-        <!-- Contact par WhatsApp -->
+        <!-- CONTACT PAR WHATSAPP -->
         <div class="contact-card">
           <h3>WhatsApp</h3>
           <p>
@@ -163,15 +217,16 @@
               href="https://wa.me/33605838043"
               target="_blank"
               rel="noopener noreferrer"
-              >Nous contacter sur WhatsApp</a
             >
+              Nous contacter sur WhatsApp
+            </a>
           </p>
         </div>
       </div>
 
       <!-- FORMULAIRE DE CONTACT -->
       <form>
-        <!-- Champ pour le nom -->
+        <!-- NOM -->
         <label for="nom">Votre nom</label>
         <input
           type="text"
@@ -181,7 +236,7 @@
           required
         />
 
-        <!-- Champ pour l'adresse e-mail -->
+        <!-- ADRESSE E-MAIL -->
         <label for="email">Votre adresse e-mail</label>
         <input
           type="email"
@@ -191,7 +246,7 @@
           required
         />
 
-        <!-- Champ pour le message -->
+        <!-- MESSAGE -->
         <label for="message">Votre message</label>
         <textarea
           id="message"
@@ -200,23 +255,32 @@
           required
         ></textarea>
 
-        <!-- Bouton d'envoi -->
+        <!-- BOUTON D'ENVOI -->
         <button type="submit">Envoyer le message</button>
       </form>
 
-      <!-- Image de la ville de Colmar -->
+      <!-- IMAGE DE LA VILLE DE COLMAR -->
       <div class="contact-image">
-        <img src="images/colmar-image.jpg" alt="Vue de la ville de Colmar" />
+        <img
+          src="images/colmar-image.jpg"
+          alt="Vue de la ville de Colmar"
+        />
       </div>
     </section>
 
-    <!-- PIED DE PAGE : Informations de bas de page -->
-    <footer class="footer">
-      <!-- Nom de l'entreprise -->
-      <h2>AU MULTI SERVICES</h2>
+    <!-- ========================================
+         PIED DE PAGE : FOOTER
+    ========================================= -->
 
-      <!-- Menu de navigation du pied de page -->
-      <nav>
+    <footer class="footer">
+      <!-- NOM ET SLOGAN -->
+      <div class="footer-brand">
+        <h2>AU MULTI SERVICES</h2>
+        <p>Votre quotidien, notre priorité</p>
+      </div>
+
+      <!-- NAVIGATION DU PIED DE PAGE -->
+      <nav aria-label="Navigation du pied de page">
         <ul>
           <li><a href="#home">Accueil</a></li>
           <li><a href="#services">Nos services</a></li>
@@ -225,8 +289,23 @@
         </ul>
       </nav>
 
-      <!-- Droits d'auteur -->
+      <!-- RÉSEAU WHATSAPP -->
+      <div class="footer-social">
+        <a
+          href="https://wa.me/33605838043"
+          aria-label="WhatsApp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <!-- DROITS D'AUTEUR -->
       <p>&copy; 2026 AU MULTI SERVICES. Tous droits réservés.</p>
     </footer>
+
+    <!-- FICHIER JAVASCRIPT -->
+    <script src="script.js"></script>
   </body>
 </html>
