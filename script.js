@@ -13,21 +13,21 @@ menuButton.addEventListener("click", function () {
   menuButton.setAttribute("aria-expanded", menuIsOpen);
 });
 
-// Trouver le formulaire de contact
-const contactForm = document.querySelector("#contact-form");
+// // Trouver le formulaire de contact
+// const contactForm = document.querySelector("#contact-form");
 
-// trouver l'espace du message
-const foramMessage = document.querySelector("#form-message");
+// // trouver l'espace du message
+// const foramMessage = document.querySelector("#form-message");
 
-// Écouter l'événement de soumission du formulaire
-contactForm.addEventListener("submit", function (event) {
-  // Empêcher l'envoi du formulaire
-  event.preventDefault();
+// // Écouter l'événement de soumission du formulaire
+// contactForm.addEventListener("submit", function (event) {
+//   // Empêcher l'envoi du formulaire
+//   event.preventDefault();
 
-  // afficher le message de confirmation
-  foramMessage.textContent =
-    "Merci pour votre message ! Nous vous répondrons bientôt.";
+//   // afficher le message de confirmation
+//   foramMessage.textContent =
+//     "Merci pour votre message ! Nous vous répondrons bientôt.";
 
-  // Vider les champs du formulaire
-  contactForm.reset();
-});
+//   // Vider les champs du formulaire
+//   contactForm.reset();
+// });
