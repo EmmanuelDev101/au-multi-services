@@ -511,55 +511,37 @@ header nav a:hover {
 ================================= */
 
 @media (max-width: 700px) {
-  /* HEADER */
   header {
     padding: 15px 20px;
     flex-wrap: wrap;
-    position: relative;
   }
 
   .brand h1 {
     font-size: 23px;
   }
 
-  /* BOUTON MENU MOBILE */
   .menu-toggle {
     display: block;
   }
 
-  /* MENU DÉROULANT */
   header nav {
     display: none;
-    position: absolute;
-    top: 100%;
-    right: 20px;
-    width: 220px;
-    margin-top: 10px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-    z-index: 1000;
+    width: 100%;
+    margin-top: 15px;
   }
 
   header nav.active {
     display: block;
   }
 
-  /* LIENS DU MENU */
   header nav ul {
     flex-direction: column;
     align-items: stretch;
-    gap: 0;
-    padding: 10px 0;
-  }
-
-  header nav ul li a {
-    display: block;
-    padding: 12px 18px;
+    gap: 15px;
+    padding: 15px 0;
     text-align: right;
   }
 
-  /* HERO */
   .hero {
     min-height: 400px;
     padding: 50px 20px;
@@ -577,7 +559,6 @@ header nav a:hover {
     margin-bottom: 12px;
   }
 
-  /* SERVICES */
   .services {
     padding: 40px 20px;
   }
@@ -592,7 +573,6 @@ header nav a:hover {
     height: 220px;
   }
 
-  /* À PROPOS */
   .about {
     padding: 40px 20px;
     grid-template-columns: 1fr;
@@ -607,7 +587,6 @@ header nav a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* CONTACT */
   .contact {
     padding: 40px 20px;
   }
@@ -616,7 +595,6 @@ header nav a:hover {
     grid-template-columns: 1fr;
   }
 
-  /* FOOTER */
   .footer {
     padding: 30px 20px;
   }
