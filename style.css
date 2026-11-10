@@ -372,6 +372,53 @@ header nav a:hover {
   border-radius: 10px;
 }
 
+/* PAGE DE REMERCIEMENT */
+
+.thank-you {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 50px 30px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ICÔNE DE SUCCÈS */
+.success-icon {
+  font-size: 60px;
+  color: #25a55b;
+  margin-bottom: 20px;
+}
+
+/* TITRE */
+.thank-you h2 {
+  color: #12345a;
+  margin-bottom: 15px;
+}
+
+/* TEXTE */
+.thank-you p {
+  color: #555555;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* BOUTON */
+.thank-you .btn {
+  display: inline-block;
+  background-color: #0875d1;
+  color: #ffffff;
+  padding: 13px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.thank-you .btn:hover {
+  background-color: #12345a;
+}
+
 /* ========================================
    7. PIED DE PAGE
 ======================================== */
