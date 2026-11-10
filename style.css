@@ -537,8 +537,13 @@ header nav a:hover {
   header nav ul {
     flex-direction: column;
     align-items: stretch;
-    gap: 15px;
+    gap: 0;
     padding: 15px 0;
+  }
+
+  header nav ul li a {
+    display: block;
+    padding: 12px 18px;
     text-align: right;
   }
 
